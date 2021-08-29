@@ -1,0 +1,20 @@
+[package]
+name = "rpak"
+version = "0.2.0-dev.1"
+authors = [
+  "Iris System <iris@iris.ac.nz>"
+]
+
+readme = "README.md"
+description = "Simple no_std-compatible helper for the Quake 2 PAK format"
+homepage = "https://github.com/u1f408/rpak"
+repository = "https://github.com/u1f408/rpak"
+license = "MIT"
+edition = "2018"
+
+[features]
+std = [ "byteorder/std" ]
+default = [ "std" ]
+
+[dependencies]
+byteorder = { version = "1.4.3", default-features = false }
